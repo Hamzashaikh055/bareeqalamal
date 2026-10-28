@@ -1,0 +1,515 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Bareeq Al Amal Real Estate</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&family=Reem+Kufi:wght@500;700&display=swap" rel="stylesheet">
+<style>
+/* Layout: a dusk skyline hero (low-rise Satwa rising into the towers along Sheikh Zayed Road), then ruled service rows, a four-step Dubai sale sequence, neighbourhood chips and a compose-and-copy enquiry. */
+:root {
+  --bg: #F0F3F1;
+  --surface: #FFFFFF;
+  --ink: #10202A;
+  --muted: #47585F;
+  --line: #CFD8D5;
+  --accent: #0D5A62;
+  --accent-ink: #FFFFFF;
+  --glint: #E3A93B;
+  --glint-ink: #1A1204;
+  --glow: rgba(227, 169, 59, 0.30);
+  --night: #0A1822;
+  --night-2: #14303C;
+  --sky-far: #1A3947;
+  --sky-near: #08141C;
+  --hero-fg: #EDF2F0;
+  --hero-muted: #A8BAC1;
+  --hero-line: #3A5565;
+  --f-display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+  --f-body: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+  --f-ar: "Reem Kufi", "Segoe UI", Tahoma, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0B151B;
+    --surface: #12222B;
+    --ink: #E8EEEC;
+    --muted: #9DB0B7;
+    --line: #223743;
+    --accent: #58BEC5;
+    --accent-ink: #04222A;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0B151B;
+  --surface: #12222B;
+  --ink: #E8EEEC;
+  --muted: #9DB0B7;
+  --line: #223743;
+  --accent: #58BEC5;
+  --accent-ink: #04222A;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--f-body);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+h1, h2, h3, p, ul, ol { margin: 0; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.hero :focus-visible { outline-color: var(--glint); }
+
+.wrap {
+  max-width: 76rem;
+  margin-inline: auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.sec { padding-block: clamp(3rem, 7vw, 5.5rem); }
+.eyebrow {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+h2 {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: clamp(1.75rem, 4.2vw, 2.7rem);
+  line-height: 1.08;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+  max-width: 22ch;
+}
+.lede { color: var(--muted); max-width: 60ch; margin-top: 1rem; }
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.65rem 1.3rem;
+  font: 600 1rem var(--f-body);
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.btn-glint { background: var(--glint); color: var(--glint-ink); }
+.btn-line { border-color: var(--hero-line); color: var(--hero-fg); }
+.btn-accent { background: var(--accent); color: var(--accent-ink); }
+.btn-ghost { border-color: var(--line); color: var(--ink); background: transparent; }
+.btn:hover { filter: brightness(1.08); }
+
+/* Hero */
+.hero {
+  position: relative;
+  overflow: hidden;
+  color: var(--hero-fg);
+  background:
+    radial-gradient(60rem 26rem at 72% 100%, var(--glow), transparent 70%),
+    linear-gradient(180deg, var(--night) 0%, var(--night-2) 100%);
+}
+.hero .wrap { position: relative; z-index: 2; }
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  padding-block: 1.25rem;
+}
+.brand { display: flex; align-items: baseline; gap: 0.7rem; }
+.brand-ar { font-family: var(--f-ar); font-weight: 700; font-size: 1.55rem; color: var(--glint); line-height: 1; }
+.brand-en { font-family: var(--f-display); font-weight: 700; letter-spacing: 0.01em; }
+.nav { display: flex; align-items: center; gap: 1.5rem; font-size: 0.95rem; }
+.nav a { text-decoration: none; color: var(--hero-muted); }
+.nav a:hover { color: var(--hero-fg); }
+.nav .cta { color: var(--glint); font-weight: 600; }
+@media (max-width: 40rem) { .nav .opt { display: none; } }
+
+.hero-body { padding-block: clamp(2.5rem, 8vw, 6rem) clamp(10rem, 24vw, 16rem); }
+.hero .eyebrow { color: var(--glint); }
+h1 {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: clamp(2.35rem, 7.4vw, 5rem);
+  line-height: 1.02;
+  letter-spacing: -0.022em;
+  max-width: 15ch;
+  text-wrap: balance;
+}
+h1 em { font-style: normal; color: var(--glint); }
+.hero p.sub { color: var(--hero-muted); max-width: 36rem; margin-top: 1.25rem; font-size: 1.08rem; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.75rem; }
+
+.sky {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: clamp(9rem, 24vw, 16rem);
+  z-index: 1;
+  display: block;
+}
+.sky .far { fill: var(--sky-far); }
+.sky .near { fill: var(--sky-near); }
+.sky .win { fill: var(--glint); }
+@keyframes glint { 0%, 100% { opacity: 0.2; } 50% { opacity: 1; } }
+.sky .tw { animation: glint 5s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .sky .tw { animation: none; } }
+
+/* Services */
+.rows { display: grid; margin-top: 2rem; border-top: 1px solid var(--line); }
+.row {
+  display: grid;
+  grid-template-columns: 7rem minmax(0, 1fr) minmax(0, 1.4fr);
+  gap: 0.4rem 2rem;
+  align-items: baseline;
+  padding-block: 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+.row .tag { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
+.row h3 { font-family: var(--f-display); font-weight: 700; font-size: 1.35rem; line-height: 1.2; }
+.row p { color: var(--muted); max-width: 58ch; }
+@media (max-width: 48rem) { .row { grid-template-columns: minmax(0, 1fr); } }
+
+/* Process */
+.band { background: var(--surface); border-block: 1px solid var(--line); }
+.steps {
+  list-style: none;
+  padding: 0;
+  margin-top: 2.25rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13.5rem, 1fr));
+  gap: 2rem;
+  counter-reset: s;
+}
+.steps li { counter-increment: s; border-top: 2px solid var(--accent); padding-top: 1rem; min-width: 0; }
+.steps li::before {
+  content: counter(s);
+  display: block;
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 1;
+  color: var(--accent);
+  margin-bottom: 0.6rem;
+}
+.steps h3 { font-family: var(--f-display); font-weight: 700; font-size: 1.2rem; margin-bottom: 0.4rem; }
+.steps p { color: var(--muted); font-size: 0.97rem; }
+.note { margin-top: 2rem; color: var(--muted); max-width: 62ch; font-size: 0.97rem; }
+
+/* Areas */
+.areas { list-style: none; padding: 0; margin-top: 1.75rem; display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.areas li {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  font-family: var(--f-display);
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+.areas li.home { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.areas li small { font-family: var(--f-body); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; margin-left: 0.5rem; opacity: 0.85; }
+
+/* Contact */
+.contact { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 2.5rem 4rem; align-items: start; }
+@media (max-width: 56rem) { .contact { grid-template-columns: minmax(0, 1fr); } }
+.facts { display: grid; gap: 1.25rem; margin-top: 1.75rem; }
+.facts dt { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.2rem; }
+.facts dd { margin: 0; font-family: var(--f-display); font-weight: 500; font-size: 1.2rem; overflow-wrap: anywhere; }
+.facts a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.facts .btn { margin-top: 0.6rem; font-size: 0.92rem; min-height: 40px; }
+
+form { display: grid; gap: 1rem; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: clamp(1rem, 3vw, 1.75rem); }
+.field { display: grid; gap: 0.3rem; min-width: 0; }
+.field label { font-size: 0.88rem; font-weight: 600; }
+.field input, .field select, .field textarea {
+  width: 100%;
+  font: 400 1rem var(--f-body);
+  color: var(--ink);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 0.7rem 0.8rem;
+}
+.two { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: 1rem; }
+.out { resize: vertical; line-height: 1.5; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.status { min-height: 1.4rem; font-size: 0.92rem; color: var(--accent); font-weight: 600; }
+.hint { font-size: 0.88rem; color: var(--muted); }
+
+footer { border-top: 1px solid var(--line); background: var(--surface); }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem 2rem; padding-block: 1.5rem; color: var(--muted); font-size: 0.92rem; }
+</style>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">
+        <span class="brand-ar" lang="ar" dir="rtl">بريق الأمل</span>
+        <span class="brand-en">Bareeq Al Amal</span>
+      </div>
+      <nav class="nav" aria-label="Main">
+        <a class="opt" href="#services">Services</a>
+        <a class="opt" href="#process">How a sale works</a>
+        <a class="opt" href="#areas">Areas</a>
+        <a class="cta" href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="hero-body">
+      <p class="eyebrow">Real estate brokerage · Al Karama, Dubai</p>
+      <h1>Find the Dubai property that <em>shines</em> for you</h1>
+      <p class="sub">Bareeq Al Amal is a Dubai brokerage for people who want to buy, sell or rent property in the city. Tell us what you need and a broker will come back to you.</p>
+      <div class="hero-actions">
+        <a class="btn btn-glint" href="#contact">Send an enquiry</a>
+        <a class="btn btn-line" href="#services">See what we do</a>
+      </div>
+    </div>
+  </div>
+  <svg id="sky" class="sky" viewBox="0 0 1200 240" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false"></svg>
+</header>
+
+<main>
+  <section id="services" class="wrap sec">
+    <p class="eyebrow">Services</p>
+    <h2>Sales and leasing, handled by one team</h2>
+    <p class="lede">Whether you own a unit or are looking for one, the work is the same: a fair price, the right people in front of the property, and paperwork that is done correctly.</p>
+    <div class="rows">
+      <article class="row">
+        <p class="tag">Sales</p>
+        <h3>Sell your property</h3>
+        <p>We set the asking price against recent Dubai Land Department transactions, list the unit, arrange viewings and negotiate the offer through to transfer.</p>
+      </article>
+      <article class="row">
+        <p class="tag">Sales</p>
+        <h3>Buy a home or an investment</h3>
+        <p>Give us your budget and preferred areas. We shortlist ready and resale units, take you to viewings and explain each document before you sign it.</p>
+      </article>
+      <article class="row">
+        <p class="tag">Leasing</p>
+        <h3>Rent a property</h3>
+        <p>Tenants get a shortlist that fits their budget and move-in date. The tenancy is registered through Ejari so the contract is on record.</p>
+      </article>
+      <article class="row">
+        <p class="tag">Leasing</p>
+        <h3>Let out your property</h3>
+        <p>We find tenants, agree the contract terms with them and register the tenancy on Ejari, so you can hand over the keys with the paperwork finished.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="process" class="band">
+    <div class="wrap sec">
+      <p class="eyebrow">How a Dubai sale works</p>
+      <h2>Four steps from first call to new owner</h2>
+      <p class="lede">Resale property in Dubai follows the same path each time. We guide buyers and sellers through every step.</p>
+      <ol class="steps">
+        <li>
+          <h3>Tell us the brief</h3>
+          <p>Area, budget or asking price, and when you want to move. A few lines are enough to start.</p>
+        </li>
+        <li>
+          <h3>Viewings and listing</h3>
+          <p>Buyers see units that match. Sellers get a price based on recent sales and a listing that reaches buyers.</p>
+        </li>
+        <li>
+          <h3>Agree and sign Form F</h3>
+          <p>Once the price is agreed, both sides sign Form F, the standard memorandum of understanding for a resale.</p>
+        </li>
+        <li>
+          <h3>NOC and transfer</h3>
+          <p>The developer issues a no-objection certificate where needed, then ownership transfers at a Dubai Land Department trustee office.</p>
+        </li>
+      </ol>
+      <p class="note">Renting follows a shorter path: shortlist, viewing, contract, then Ejari registration.</p>
+    </div>
+  </section>
+
+  <section id="areas" class="wrap sec">
+    <p class="eyebrow">Areas</p>
+    <h2>Based in Al Karama, working across Dubai</h2>
+    <p class="lede">Al Karama is in the heart of Bur Dubai, a short drive from Downtown and Business Bay. Our office is next to Karama Post Office, and it is where most of our conversations start.</p>
+    <ul class="areas">
+      <li class="home">Al Karama<small>Our office</small></li>
+      <li>Bur Dubai</li>
+      <li>Satwa</li>
+      <li>Jumeirah</li>
+      <li>Al Wasl</li>
+      <li>Downtown Dubai</li>
+      <li>Business Bay</li>
+      <li>Dubai Marina</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="band">
+    <div class="wrap sec">
+      <div class="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Tell us what you are looking for</h2>
+          <p class="lede">Fill in the short form to write your message, then copy it and email it to us. We reply to every enquiry.</p>
+          <dl class="facts">
+            <div>
+              <dt>Email</dt>
+              <dd>
+                <a id="emailText" href="mailto:bareeqalamal786@gmail.com">bareeqalamal786@gmail.com</a>
+                <div><button type="button" class="btn btn-ghost" id="copyEmail">Copy address</button></div>
+              </dd>
+            </div>
+            <div>
+              <dt>Mobile</dt>
+              <dd><a href="tel:+971554721973">+971 55 472 1973</a><br><a href="tel:+971544961973">+971 54 496 1973</a></dd>
+            </div>
+            <div>
+              <dt>Landline</dt>
+              <dd><a href="tel:+97145805175">+971 4 580 5175</a></dd>
+            </div>
+            <div>
+              <dt>Office</dt>
+              <dd>Office SH5, Al Hamra Building<br>Plot 530, Al Karama<br>Near Karama Post Office<br>Dubai, United Arab Emirates</dd>
+            </div>
+            <div>
+              <dt>Makani number</dt>
+              <dd>2981993089</dd>
+            </div>
+          </dl>
+        </div>
+
+        <form id="enq" novalidate>
+          <div class="two">
+            <div class="field">
+              <label for="f-name">Your name</label>
+              <input id="f-name" type="text" autocomplete="name" placeholder="Full name">
+            </div>
+            <div class="field">
+              <label for="f-intent">I want to</label>
+              <select id="f-intent">
+                <option value="buy a property">Buy a property</option>
+                <option value="sell my property">Sell my property</option>
+                <option value="rent a property">Rent a property</option>
+                <option value="let out my property">Let out my property</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-area">Area</label>
+            <input id="f-area" type="text" placeholder="For example Jumeirah or Business Bay">
+          </div>
+          <div class="field">
+            <label for="f-note">Anything else we should know</label>
+            <textarea id="f-note" rows="3" placeholder="Budget, bedrooms, move-in date"></textarea>
+          </div>
+          <div class="field">
+            <label for="out">Your message</label>
+            <textarea id="out" class="out" rows="8" readonly></textarea>
+          </div>
+          <div class="actions">
+            <button type="button" class="btn btn-accent" id="copyMsg">Copy message</button>
+            <a class="btn btn-ghost" id="mailLink" href="mailto:bareeqalamal786@gmail.com">Open in email app</a>
+          </div>
+          <p class="status" id="status" role="status" aria-live="polite"></p>
+          <p class="hint">Copy the message, then paste it into an email to the address on the left. The email app button works on most phones and computers.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Add your RERA / Dubai Land Department brokerage licence number to the footer before sharing the site publicly. -->
+<footer>
+  <div class="wrap">
+    <span>Bareeq Al Amal Real Estate · Office SH5, Al Hamra Building, Al Karama, Dubai, UAE</span>
+    <span>© 2026 Bareeq Al Amal · bareeqalamal.com</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var EMAIL = "bareeqalamal786@gmail.com";
+
+  /* Skyline: low-rise blocks on the left (Satwa), towers on the right. */
+  var seed = 11;
+  function rnd() { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; }
+  var far = [[430,50,118],[486,44,150],[536,58,108],[600,40,176],[646,52,138],[704,46,204],[756,36,164],[888,48,170],[942,56,128],[1004,42,192],[1052,50,150],[1108,60,112],[1172,40,96]];
+  var near = [[0,64,54],[70,48,80],[124,70,44],[200,52,68],[258,60,38],[324,46,86],[376,66,52],[448,54,36],[690,64,42],[770,70,30],[1000,56,44],[1120,70,34]];
+  var BASE = 240;
+  var out = "";
+  function sil(list, cls) {
+    list.forEach(function (b) { out += '<rect class="' + cls + '" x="' + b[0] + '" y="' + (BASE - b[2]) + '" width="' + b[1] + '" height="' + b[2] + '"/>'; });
+  }
+  function wins(list, p) {
+    list.forEach(function (b) {
+      var cols = Math.floor((b[1] - 8) / 9), rows = Math.floor((b[2] - 12) / 11);
+      for (var r = 0; r < rows; r++) {
+        for (var c = 0; c < cols; c++) {
+          if (rnd() < p) {
+            var x = b[0] + 6 + c * 9, y = BASE - b[2] + 8 + r * 11;
+            var tw = rnd() < 0.4;
+            var style = tw ? 'animation-delay:-' + (rnd() * 5).toFixed(2) + 's' : 'opacity:' + (0.35 + rnd() * 0.5).toFixed(2);
+            out += '<rect class="win' + (tw ? ' tw' : '') + '" x="' + x + '" y="' + y + '" width="3" height="4" style="' + style + '"/>';
+          }
+        }
+      }
+    });
+  }
+  sil(far, "far");
+  out += '<polygon class="far" points="846,240 884,240 867,26 863,26"/>';
+  wins(far, 0.3);
+  sil(near, "near");
+  wins(near, 0.2);
+  document.getElementById("sky").innerHTML = out;
+
+  /* Enquiry composer */
+  var $ = function (id) { return document.getElementById(id); };
+  var status = $("status");
+  function compose() {
+    var name = $("f-name").value.trim();
+    var area = $("f-area").value.trim();
+    var note = $("f-note").value.trim();
+    var msg = "Hello Bareeq Al Amal,\n\nI would like to " + $("f-intent").value + ".\nArea: " + (area || "not decided yet") + "\n" + (note ? "\n" + note + "\n" : "") + "\nRegards,\n" + (name || "(your name)");
+    $("out").value = msg;
+    $("mailLink").href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent("Property enquiry") + "&body=" + encodeURIComponent(msg);
+    return msg;
+  }
+  ["f-name", "f-intent", "f-area", "f-note"].forEach(function (id) {
+    $(id).addEventListener("input", compose);
+    $(id).addEventListener("change", compose);
+  });
+  $("enq").addEventListener("submit", function (e) { e.preventDefault(); });
+
+  function selectNode(n) {
+    var r = document.createRange(); r.selectNodeContents(n);
+    var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+  }
+  function copy(text, okMsg, fallback) {
+    function fb() { try { fallback(); } catch (e) {} status.textContent = "Select the text and copy it."; }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      try {
+        navigator.clipboard.writeText(text).then(function () { status.textContent = okMsg; }, fb);
+      } catch (e) { fb(); }
+    } else { fb(); }
+  }
+  $("copyMsg").addEventListener("click", function () {
+    var m = compose();
+    copy(m, "Message copied. Paste it into an email to us.", function () { $("out").focus(); $("out").select(); });
+  });
+  $("copyEmail").addEventListener("click", function () {
+    copy(EMAIL, "Email address copied.", function () { selectNode($("emailText")); });
+  });
+  compose();
+})();
+</script>
+
+</body></html>
